@@ -1,0 +1,34 @@
+{
+    "name": "bagisto/bagisto-sendcloud-shipping",
+    "description": "Allows the sendcloud shipping.",
+    "keywords": [
+        "bagisto",
+        "sendcloud",
+        "sendcloud-shipping"
+    ],
+    "homepage": "https://github.com/bagisto/bagisto-sendcloud-shipping",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Naresh Verma",
+            "email": "naresh.verma327@webkul.com"
+        }
+    ],
+    "require": {
+        "konekt/concord": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webkul\\SendcloudShipping\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webkul\\SendcloudShipping\\Providers\\SendcloudShippingServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev"
+}
