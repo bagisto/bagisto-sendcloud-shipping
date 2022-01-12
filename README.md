@@ -37,11 +37,11 @@ php artisan config:cache
 ```
 
 ```
-php artisan vendor:publish --force
+php artisan vendor:publish
 ```
 -> Press 0 and then press enter to publish all assets and configurations.
 
-## Installation:
+## Installation without composer:
 
 - Unzip the respective extension zip and then merge "packages" into project root directory.
 - Goto config/app.php file and add following line under 'providers'
