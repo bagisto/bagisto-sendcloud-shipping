@@ -14,7 +14,7 @@ Bagisto Send Cloud Shipping add-on provide you a better way of shipping. Bagisto
 
 - **Bagisto**: v1.3.2.
 
-## Installation with composer:
+## Installation :
 - Run the following command
 ```
 composer require bagisto/bagisto-sendcloud-shipping
@@ -26,36 +26,6 @@ composer require bagisto/bagisto-sendcloud-shipping
 ```
 
 - Run these commands below to complete the setup
-```
-composer dump-autoload
-```
-
-```
-php artisan migrate
-php artisan route:cache
-php artisan config:cache
-```
-
-```
-php artisan vendor:publish
-```
--> Press 0 and then press enter to publish all assets and configurations.
-
-## Installation without composer:
-
-- Unzip the respective extension zip and then merge "packages" into project root directory.
-- Goto config/app.php file and add following line under 'providers'
-
-```
-Webkul\SendcloudShipping\Providers\SendcloudShippingServiceProvider::class
-```
-
-- Goto composer.json file and add following line under 'psr-4'
-
-```
-"Webkul\\SendcloudShipping\\": "packages/Webkul/SendcloudShipping/src"
-
-```
 ```
 composer dump-autoload
 ```
